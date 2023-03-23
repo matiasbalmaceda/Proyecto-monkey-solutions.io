@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* colores */
+/* #5D5A88 - 4nivel oscuro
+#9795B5 - 3nivel moderado
+#ADABC3 - 2 nivel liviano
+#F2F1FA - casi blanco
+
 /*HEADER*/
 .header-container {
     display: grid;
@@ -14,7 +20,7 @@
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -31,14 +37,14 @@ nav a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333;
+    color: #5D5A88;
     /* Cambiar por el color que desees */
 }
 
 nav a:hover {
-    background-color: #333;
+    background-color: #F2F1FA;
     /* Cambiar por el color que desees */
-    color: #fff;
+    color: #9795B5;
     /* Cambiar por el color que desees */
 }
 
@@ -63,15 +69,22 @@ nav a:hover {
 }
 
 .banner-content {
-    max-width: 600px;
+    max-width: 100%;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.banner-image {
+    display: block; /* Hacer que la imagen sea un elemento en bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    max-width: 100%; /* Asegurarse de que la imagen no sobrepase el ancho del contenedor */
 }
 
 .banner h1 {
     font-size: 3em;
     color: #fff;
     margin-bottom: 20px;
+    
 }
 
 .banner p {
@@ -112,13 +125,13 @@ nav a:hover {
     margin-left: 10px;
 }
 
-.banner-image {
-    background-image: url(ruta/de/la/imagen.jpg);
+/*.banner-image {
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 400px;
+    height: 20%;
 }
+    /* no queda dentro del banner */
 
 .slider {
     display: flex;
@@ -234,10 +247,13 @@ footer {
     align-items: center;
 }
 
+
 .footer-container h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #5D5A88;
+
 }
 
 .footer-container p {
@@ -334,27 +350,44 @@ footer {
     margin-bottom: 10px;
 }
 
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5D5A88;
+    
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5D5A88;
+    
+}
 .service-card h2 {
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 5px;
+    color: #5D5A88;
 }
 
 .service-card p {
     font-size: 1rem;
     margin-bottom: 10px;
+    color: #5D5A88;
 }
 
 .btn-learn-more {
     font-weight: bold;
     text-decoration: none;
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: #5D5A88;
+    border-bottom: 2px solid #5D5A88;
 }
 
 .btn-learn-more:hover {
-    color: #666;
-    border-bottom: 2px solid #666;
+    color: #9795B5;
+    border-bottom: 2px solid #9795B5;
 }
 
 /*estilo cards personas*/
@@ -363,12 +396,14 @@ footer {
 .titulo-nosotros h1 {
     font-size: 2rem;
     text-align: center;
+    color: #5D5A88;
 }
 
 .titulo-nosotros p {
     font-size: 1.2rem;
     margin-top: 20px;
     text-align: center;
+    color: #5D5A88;
 }
 
 .cards-container {
@@ -399,11 +434,12 @@ footer {
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 5px;
+    color: #5D5A88;
 }
 
 .card h3 {
     font-size: 1.2rem;
-    color: #666;
+    color: #5D5A88;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -413,6 +449,7 @@ footer {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #5D5A88;
 }
 
 .social-icons {
@@ -502,27 +539,28 @@ button[type="submit"]:hover {
 
 
 /* ------ estilo LOGIN MAIN*/
-.container {
+.login-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 20px;
 }
 
-.container h1 {
+.login-container h1 {
 	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
 	margin: 20px 0;
 }
 
-.container p {
+.login-container p {
 	font-size: 16px;
 	text-align: center;
 	margin: 10px 0;
 }
 
-.contanier form {
+
+.login-container form {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, auto);
@@ -533,12 +571,13 @@ button[type="submit"]:hover {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.container label {
+.login-container label {
 	font-size: 16px;
 	font-weight: bold;
+    color: #5D5A88;
 }
 
-.container input {
+.login-container input {
 	font-size: 16px;
 	padding: 10px;
 	border-radius: 5px;
@@ -546,7 +585,7 @@ button[type="submit"]:hover {
 	background-color: #f2f2f2;
 }
 
-.container button {
+.login-container button {
 	font-size: 16px;
 	padding: 10px;
 	border-radius: 10px;
@@ -557,6 +596,6 @@ button[type="submit"]:hover {
 	transition: all 0.3s ease;
 }
 
-.container button:hover {
+.login-container button:hover {
 	background-color: #aaa;
 }
